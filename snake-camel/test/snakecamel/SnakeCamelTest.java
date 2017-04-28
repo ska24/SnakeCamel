@@ -10,56 +10,56 @@ public class SnakeCamelTest {
 	//テストケース1
 	@Test
 	public void snakeToCamelcaseでjunit_tutorialをJunitTutorialにできる(){
-		String expected="junitTutorial";
+		String expected="JunitTutorial";
 		String actual=SnakeCamelUtil.snakeToCamelcase("junit_tutorial");
 		assertThat(actual, is(expected));
 	}
 	@Test
-	public void camelToSnakecaseでjunitTutorialをjunit_tutorialにできる(){
+	public void camelToSnakecaseでJunitTutorialをjunit_tutorialにできる(){
 		String expected="junit_tutorial";
-		String actual=SnakeCamelUtil.camelToSnakecase("junitTutorial");
+		String actual=SnakeCamelUtil.camelToSnakecase("JunitTutorial");
 		assertThat(actual, is(expected));
 	}
 	
 	//テストケース2
 	@Test
-	public void snakeToCamelcaseでsnake_camelをsnakeCamelにできる(){
-		String expected="snakeCamel";
+	public void snakeToCamelcaseでsnake_camelをSnakeCamelにできる(){
+		String expected="SnakeCamel";
 		String actual=SnakeCamelUtil.snakeToCamelcase("snake_camel");
 		assertThat(actual, is(expected));
 	}
 	@Test
-	public void camelToSnakecaseでsnakeCamelをsnake_camelにできる(){
+	public void camelToSnakecaseでSnakeCamelをsnake_camelにできる(){
 		String expected="snake_camel";
-		String actual=SnakeCamelUtil.camelToSnakecase("snakeCamel");
+		String actual=SnakeCamelUtil.camelToSnakecase("SnakeCamel");
 		assertThat(actual, is(expected));
 	}
 	
 	//テストケース3
 	@Test
-	public void snakeToCamelcaseでchocolate_iceをchocolateIceにできる(){
-		String expected="chocolateIce";
+	public void snakeToCamelcaseでchocolate_iceをChocolateIceにできる(){
+		String expected="ChocolateIce";
 		String actual=SnakeCamelUtil.snakeToCamelcase("chocolate_ice");
 		assertThat(actual, is(expected));
 	}
 	@Test
-	public void camelToSnakecaseでchocolateIceをchocolate_iceにできる(){
+	public void camelToSnakecaseでChocolateIceをchocolate_iceにできる(){
 		String expected="chocolate_ice";
-		String actual=SnakeCamelUtil.camelToSnakecase("chocolateIce");
+		String actual=SnakeCamelUtil.camelToSnakecase("ChocolateIce");
 		assertThat(actual, is(expected));
 	}
 	
 	//テストケース4
 	@Test
-	public void snakeToCamelcaseでdefault_packageをdefaultPackageにできる(){
-		String expected="defaultPackage";
+	public void snakeToCamelcaseでdefault_packageをDefaultPackageにできる(){
+		String expected="DefaultPackage";
 		String actual=SnakeCamelUtil.snakeToCamelcase("default_package");
 		assertThat(actual, is(expected));
 	}
 	@Test
-	public void camelToSnakecaseでdefaultPackageをdefault_packageにできる(){
+	public void camelToSnakecaseでDefaultPackageをdefault_packageにできる(){
 		String expected="default_package";
-		String actual=SnakeCamelUtil.camelToSnakecase("defaultPackage");
+		String actual=SnakeCamelUtil.camelToSnakecase("DefaultPackage");
 		assertThat(actual, is(expected));
 	}
 }
